@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import TypingMotionText from "./TypingMotionText";
+import Profile from "../assets/profile-pics.jpg";
 
 const Hero = () => {
   const scrollToSection = (id) => {
@@ -14,6 +15,13 @@ const Hero = () => {
     >
       <motion.div whileHover={{ scale: 1.05 }}>
         <div className="text-center max-w-2xl">
+          <figure>
+            <img
+              src={Profile}
+              alt="Portrait photo of the user"
+              className="w-44 h-44 rounded-full mx-auto mb-6 object-cover border-4 border-indigo-800 dark:border-indigo-500 shadow-lg shadow-indigo-300 dark:shadow-indigo-700 animate-pulse hover:animate-none transition-all duration-300"
+            />
+          </figure>
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +48,9 @@ const Hero = () => {
           </motion.p>
 
           <p className="text-gray-500 dark:text-gray-400 mb-6 text-lg">
-            I’m a Front-end Software Engineer and Graphics Designer, crafting visually striking and user-friendly digital experiences that blend creativity with clean, functional code.
+            I’m a Front-end Software Engineer and Graphics Designer, crafting
+            visually striking and user-friendly digital experiences that blend
+            creativity with clean, functional code.
           </p>
 
           <div className="flex justify-center gap-4">
@@ -53,7 +63,7 @@ const Hero = () => {
 
             <button
               onClick={() => scrollToSection("contact")}
-              className="border border-indigo-800 px-6 py-3 rounded-lg hover:bg-indigo-500/10"
+              className="border border-indigo-800 px-6 py-3 rounded-lg hover:bg-indigo-500/10 hover:cursor-pointer"
             >
               Hire Me
             </button>

@@ -1,9 +1,19 @@
 import { motion } from "framer-motion";
+import portfolioImg from "../assets/portfolio.png";
+import Image from "../assets/image.png";
 
 const projects = [
-  { name: "Portfolio Website", img: "/assets/project1.png", link: "#" },
-  { name: "Branding Design", img: "/assets/project2.png", link: "#" },
-  { name: "UI Design Mockup", img: "/assets/project3.png", link: "#" },
+  {
+    name: "Projects",
+    img: Image,
+    link: "https://github.com/Faaiz1505?tab=repositories",
+  },
+  {
+    name: "Portfolio Website",
+    img: portfolioImg,
+    link: "https://faaiz1505.github.io/Portfolio/",
+  },
+  { name: "Graphics Design", img: "/assets/port.png", link: "#" },
 ];
 
 const Projects = () => (
@@ -34,7 +44,7 @@ const Projects = () => (
           <img
             src={project.img}
             alt={project.name}
-            className="w-full h-48 object-cover"
+            className="w-72 h-48 object-cover"
           />
           <div className="p-4 bg-gray-50 dark:bg-gray-900 text-center font-medium">
             {project.name}
