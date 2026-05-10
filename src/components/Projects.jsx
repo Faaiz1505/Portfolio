@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import portfolioImg from "../assets/portfolio.png";
 import Image from "../assets/image.png";
+import Design from "../assets/logo 1.jpg";
 
 const projects = [
   {
@@ -13,7 +14,7 @@ const projects = [
     img: portfolioImg,
     link: "https://faaiz1505.github.io/Portfolio/",
   },
-  { name: "Graphics Design", img: "/assets/port.png", link: "#" },
+  { name: "Graphics Design", img: Design, link: "#" },
 ];
 
 const Projects = () => (
